@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ARUIO 公众号核心数据导出器",
+  "version": "0.2.0",
+  "description": "在本机从已登录的微信公众号后台导出两个内容栏目的文章核心数据。",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://mp.weixin.qq.com/*"],
+  "action": {
+    "default_title": "导出公众号核心数据",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mp.weixin.qq.com/*"],
+      "js": ["lib/core.js", "collector.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

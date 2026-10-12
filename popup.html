@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>公众号核心数据导出</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>公众号核心数据</h1>
+      <p>请停留在“内容分析”页面，工具会自动遍历两个内容页签。</p>
+      <button id="export" type="button">导出精简 CSV</button>
+      <div id="status" role="status" aria-live="polite"></div>
+      <small>只读取本人后台，不保存登录凭据。</small>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
